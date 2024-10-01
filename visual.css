@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)); /* Fundo da pagina perso */
+  display: flex;
+  flex-direction: column;
+}
+
+.quadrado {
+  width: 734px;
+  background-color: rgba(18, 18, 18, 0.8);
+  border-radius: 20px; /* Arredonda todos os cantos */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Efeito de destaque */
+  margin: 40px auto;
+  padding: 20px;
+  flex: 1;
+}
+
+.txt h1 {
+  color: white;
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Circular Std", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.logop {
+  display: flex;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.logop img {
+  width: 41px;
+  height: auto;
+}
+
+/* Estilos para os botões */
+.btn-container {
+  display: flex; /* Ativa o modelo de layout flexível */
+  flex-direction: column; /* Organiza os itens verticalmente */
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.btn {
+  width: 90%;
+  max-width: 360px;
+  padding: 14px;
+  margin: 6px 0;
+  border-radius: 30px;
+  font-size: 16px;
+  font-family: "Circular Std", Arial, sans-serif;
+  font-weight: 900; /* Aplica um peso de fonte muito grosso ao cabeçalho */
+  cursor: pointer; /* Muda o cursor para uma mãozinha ao passar sobre o botão */
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.9);
+  display: flex; /* Ativa o modelo de layout flexível para a caixa */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center;
+  position: relative;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8); /* Sombra preta*/
+  transition: transform 0.2s; /* Adiciona transição ao shadow */
+}
+
+.btn img {
+  width: auto;
+  height: 25px;
+  margin-right: auto;
+  margin-left: 10px;
+  vertical-align: middle; /* Alinha a imagem de forma vertical ao meio em relação ao texto ao lado */
+  position: absolute;
+  left: 15px;
+}
+
+.google,
+.facebook,
+.apple,
+.numero {
+  border-color: rgba(132, 129, 129, 0.8);
+}
+
+/* Efeito hover para os botões */
+.btn:hover { /* aplica estilos a um elemento quando o mouse passa sobre ele */
+  color: white;
+  border-color: rgba(255, 255, 255, 1);
+}
+
+/* linha que separa */
+.separador {
+  border: none;
+  height: 1px;
+  background-color: rgba(65, 62, 62, 0.6);
+  margin: 40px 0;
+  width: 90%;
+  max-width: 550px; /* A largura máxima do elemento */
+}
+
+/* Estilos para os campos de email/username e senha */
+.visual-login {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto; /* Centraliza a caixa */
+  padding: 10px; /* Evita colapso de margem */
+}
+
+.visual-login label {
+  color: rgba(179, 179, 179, 0.9);
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-family: "Circular Std", Arial, sans-serif;
+}
+
+.visual-login input { /* permite estilizar os campos de entrada */
+  width: 90%;
+  padding: 14px;
+  background-color: rgba(18, 18, 18, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px; /* Arredonda as bordas do botão */
+  color: white;
+  font-size: 16px;
+  font-family: "Circular Std", Arial, sans-serif;
+  outline: none; /* Remove o contorno padrão */
+  margin-bottom: 2px; /* Adiciona margem para separar os inputs */
+  transition: border-color 0.2s, box-shadow 0.2s; /* Adiciona transição ao box-shadow */
+}
+
+.visual-login input::placeholder { /* Estiliza o texto que aparece no campo até o usuário começar a digitar */
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.visual-login input:focus { /* Estilo aplicado quando o campo de entrada está em foco */
+  border-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Efeito de destaque */
+  outline: none; /* Remove o contorno padrão */
+}
+
+/* Botão verde */
+.btn-login {
+  width: 90%;
+  max-width: 360px;
+  padding: 14px;
+  margin: 20px 0 10px 0;
+  border-radius: 30px; /* Arredonda as bordas do botão */
+  font-size: 16px;
+  font-family: "Circular Std", Arial, sans-serif;
+  font-weight: 900;
+  cursor: pointer; /* Altera o cursor para uma mãozinha quando o mouse passa sobre o botão */
+  text-align: center;
+  background-color: #1db954;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, transform 0.2s; /* Transições suaves para a cor de fundo*/
+  border: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);/* Sombra preta*/
+}
+
+.btn-login:hover {  /*aplicar estilos específicos a um elemento*/
+  background-color: #1ed760;
+  transform: scale(1.05); /* Efeito de hover */
+}
+
+.caixa-senha {
+  text-align: center;
+  margin: 20px 0; /* Espaço acima e abaixo */
+}
+
+.caixa-senha a {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+  text-decoration: underline; /* Adiciona sublinhado */
+  transition: color 0.2s;
+  font-family: "Circular Std", Arial, sans-serif; /* Fonte consistente */
+}
+
+.caixa-senha a:hover { /* plicar estilos específicos a um elemento de link */
+  color: white; /* Muda a cor ao passar o mouse */
+}
+
+.footer {
+  width: 100%;
+  background-color: rgba(18, 18, 18, 0.8);
+  color: rgba(179, 179, 179);
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto; /* Faz o rodapé ficar na parte inferior */
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+}
